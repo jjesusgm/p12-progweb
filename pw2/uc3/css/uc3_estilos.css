@@ -1,0 +1,126 @@
+@charset "utf-8";
+/* CSS Document */
+h1, h2, h3, h4, h5, h6 {
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+p.center{text-align:center}
+
+h1.center{text-align: center;}
+h2.center{text-align: center;}
+h3.center{text-align: center;}
+h4.center{text-align: center;}
+h5.center{text-align: center;}
+h6.center{text-align: center;}
+
+img.opaca:hover {
+    opacity: 0.7;
+    filter: alpha(opacity=70); /* For IE8 and earlier */
+}
+
+.tabla_compatibilidad {
+	font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+}
+
+.tabla_compatibilidad td {
+	border: 1px solid #C00;
+    text-align: center;
+    color: #C00;
+    padding: 6px;
+}
+
+.tabla_compatibilidad th {
+	border: 1px solid #C00;
+    text-align: center;
+    color: #C00;
+    padding: 10px;
+}
+
+.tabla_sencilla {
+	font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+}
+
+.tabla_sencilla td {
+	border: 1px solid #C66;
+    padding: 2px;
+}
+
+.tabla_sencilla th {
+	border: 1px solid #C66;
+    padding: 2px;
+}
+
+.tabla_contactos {
+	font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tabla_contactos th {
+	border: 1px solid #09F;
+    padding: 2px;
+    text-align: left;
+    background-color: #0066CC;
+    color: white;
+}
+
+.tabla_contactos td {
+	border: 1px solid #09F;
+    padding: 2px;
+}
+
+.tabla_contactos tr:nth-child(even){
+	background-color: #CCCCFF
+}
+
+.tabla_contactos tr:hover {
+	background-color: #0FF;
+}
+
+.registro {
+	font-family: Arial, Helvetica, sans-serif;
+	color:#C00;
+    border-collapse: collapse;
+    width: 700px;
+}
+
+.registro th {
+	border: 1px solid #09F;
+    padding: 2px;
+    text-align: left;
+    background-color: #0066CC;
+    color: white;
+}
+
+.registro td {
+	border: 1px solid #09F;
+    padding: 2px;
+}
+
+div {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+input[type="number"] {
+  width: 100px;
+}
+
+input + span {
+  padding-right: 30px;
+}
+
+input:invalid+span:after {
+  position: absolute; content: '✖';
+  padding-left: 5px;
+  color: #8b0000;
+}
+
+input:valid+span:after {
+  position: absolute;
+  content: '✓';
+  padding-left: 5px;
+  color: #009000;
+}

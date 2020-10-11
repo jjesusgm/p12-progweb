@@ -1,0 +1,74 @@
+<style type="text/css">
+body,td,th {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+img.opaca:hover {
+    opacity: 0.7;
+    filter: alpha(opacity=70); /* For IE8 and earlier */
+}
+
+.menu_bar {
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:9pt;
+}
+
+.menu_bar td a {
+    display:block;
+    height:47px;
+    line-height:47px;
+    color: Gray;
+    background-image: url('imagenes/menu_fondo_normal.png');
+    background-position:left top;   
+}
+
+.menu_bar td:hover > a {
+    color: DarkGray;
+    background-image: url('imagenes/menu_fondo_hover.png');
+    background-position:left top;   
+}
+
+.footer {
+	font-family:Verdana, Geneva, sans-serif;
+	font-size: 9pt;
+}
+.footer td {
+    color: DimGray;
+}
+
+.footer a {
+    color: Gray;
+}
+
+.footer a:hover{
+	color: DarkGray;
+}
+
+.site_name tr{
+	background-color:#890831;
+	color:White;
+}
+
+a.site_name {
+    color: white;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size: 14pt;
+}
+
+a.site_name:visited{
+    color: white;
+}
+
+a.site_name:hover{
+    color: #FCF;
+}
+
+a.site_name:active{
+    color: red;
+}
+</style>
