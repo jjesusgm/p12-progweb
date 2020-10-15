@@ -24,7 +24,7 @@ header, .main, footer {
 
 header nav {
 	overflow:hidden;
-	background-color:CornflowerBlue;
+	background-color:Coral;
 }
 
 header nav ul {
@@ -43,7 +43,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-	background:Blue;
+	background:Chocolate;
 }
 
 header .path {
@@ -96,8 +96,8 @@ header .path {
 	text-align:center;
 }
 
-.main .contenido img {
-	width:60%;
+.main .contenido cartel img {
+	/*width:60%;*/
 }
 
 .center {
@@ -122,6 +122,6 @@ footer a {
 }
 
 footer a:hover {
-	color:Blue;
+	color:orange;
 }
 
