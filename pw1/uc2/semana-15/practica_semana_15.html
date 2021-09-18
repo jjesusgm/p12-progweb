@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ejercicio con DHTML</title>
+<link href="css/estilos.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+function mueveReloj(){
+	momentoActual = new Date();
+	hora = momentoActual.getHours();
+	minuto = momentoActual.getMinutes();
+	segundo = momentoActual.getSeconds();
+	
+	str_segundo = new String(segundo);
+	if(str_segundo.length == 1)
+		segundo = "0" + segundo;
+		
+	str_minuto = new String(minuto);
+	if(str_minuto.length == 1)
+		minuto = "0" + minuto;
+		
+	str_hora = new String(hora);
+	if(str_hora.length == 1)
+		hora = "0" + hora;
+		
+	horaImprimible = hora + " : " + minuto + " : " + segundo;
+	
+	document.form_reloj.reloj.value = horaImprimible;
+	
+	setTimeout("mueveReloj()", 1000);
+}
+</script>
+</head>
+
+<body onLoad="mueveReloj()">
+<img src="imagenes/banner-dhtml.png" alt="Multimedia" width="1280" height="100" class="banner">
+<h1 class="center">Ejercicio con DHTML</h1>
+<table class="dhtml">
+  <tr>
+    <td><ul>
+      <li>Se usan formularios</li>
+      <li>Una función JavaScript muestra y actualiza el reloj</li>
+      <li>Con eventos se pone en marcha el reloj</li>
+      <li>Con hojas de estilo se cambia la apariencia</li>
+      </ul>
+    <p>A continuación el reloj funcionando...</p>
+    <form action="" method="post" name="form_reloj" class="freloj">
+      <input type="text" name="reloj" id="reloj" onFocus="window.document.form_reloj.reloj.blur()">
+    </form>
+    </td>
+  </tr>
+</table>
+<p class="copyright">Desarrollado por: <a href="mailto:jose.gutierrez2328@academicos.udg.mx">José de Jesús Gutiérrez Martínez</a></p>
+</body>
+</html>
