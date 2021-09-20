@@ -1,4 +1,5 @@
 <?php require_once('../Connections/conPW2.php'); ?>
+<?php mysql_set_charset('utf8'); ?>
 <?php
 if (!function_exists("GetSQLValueString")) {
 function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
@@ -85,25 +86,42 @@ $totalRows_rsContacto = mysql_num_rows($rsContacto);
       <th colspan="2">Registro de Agenda</th>
     </tr>
     <tr>
-      <td align="right"><input name="fID" type="hidden" id="fID" value="<?php echo $row_rsContacto['ID']; ?>" />
-      <label for="fID">ID</label></td>
-      <td><?php echo $row_rsContacto['ID']; ?></td>
+      <td align="right"><label for="fID3">
+        <input name="fID" type="hidden" id="fID" value="<?php echo $row_rsContacto['ID']; ?>" />
+      ID</label></td>
+      <td><input name="fID2" type="text" id="fID2" value="<?php echo $row_rsContacto['ID']; ?>" size="5" maxlength="5" readonly="readonly" /></td>
     </tr>
     <tr>
-      <td align="right"><label for="fNombres">Nombre(s)*</label></td>
-      <td><span class="validity"><?php echo $row_rsContacto['Nombres']; ?></span></td>
+      <td align="right"><span class="validity">
+        <label for="fNombres3">Nombre(s)*</label>
+      </span></td>
+      <td><span class="validity">
+        <input name="fNombres" type="text" id="fNombres2" value="<?php echo $row_rsContacto['Nombres']; ?>" size="50" maxlength="100" readonly="readonly" />
+      </span></td>
     </tr>
     <tr>
-      <td align="right"><label for="fApellidos">Apellido(s)*</label></td>
-      <td><span class="validity"><?php echo $row_rsContacto['Apellidos']; ?></span></td>
+      <td align="right"><span class="validity">
+        <label for="fApellidos3">Apellido(s)*</label>
+      </span></td>
+      <td><span class="validity">
+        <input name="fApellidos" type="text" id="fApellidos2" value="<?php echo $row_rsContacto['Apellidos']; ?>" size="50" maxlength="100" readonly="readonly" />
+      </span></td>
     </tr>
     <tr>
-      <td align="right"><label for="fTelefono">Teléfono</label></td>
-      <td><span class="validity"><?php echo $row_rsContacto['Telefono']; ?></span></td>
+      <td align="right"><span class="validity">
+        <label for="fTelefono3">Teléfono</label>
+      </span></td>
+      <td><span class="validity">
+        <input name="fTelefono" type="text" id="fTelefono2" value="<?php echo $row_rsContacto['Telefono']; ?>" size="16" maxlength="16" readonly="readonly" />
+      </span></td>
     </tr>
     <tr>
-      <td align="right"><label for="fCelular">Celular</label></td>
-      <td><span class="validity"><?php echo $row_rsContacto['Celular']; ?></span></td>
+      <td align="right"><span class="validity">
+        <label for="fCelular3">Celular</label>
+      </span></td>
+      <td><span class="validity">
+        <input name="fCelular" type="text" id="fCelular2" value="<?php echo $row_rsContacto['Celular']; ?>" size="16" maxlength="16" readonly="readonly" />
+      </span></td>
     </tr>
     <tr>
       <td colspan="2" align="center"><input type="submit" name="bEnviar" id="bEnviar" value="Enviar" />

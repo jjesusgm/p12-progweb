@@ -1,4 +1,5 @@
 <?php require_once('../Connections/conPW2.php'); ?>
+<?php mysql_set_charset('utf8'); ?>
 <?php
 if (!function_exists("GetSQLValueString")) {
 function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 

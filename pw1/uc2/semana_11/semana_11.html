@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<link href="css/estilos.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<p><img src="imagenes/banner_autos.jpg" alt="Banner" width="964" height="150" class="banner"></p>
+<h1 class="center">Contáctanos</h1>
+<p class="center">Usa el siguiente formulario para enviarnos un mensaje</p>
+<form name="form1" method="post" action="">
+  <table align="center" class="contacto">
+    <tr>
+      <td><label for="fNombres">Nombre(s)</label>
+      <input type="text" name="fNombres" id="fNombres"></td>
+      <td><label for="fApellidos">Apellido(s)</label>
+      <input type="text" name="fApellidos" id="fApellidos"></td>
+    </tr>
+    <tr>
+      <td><label for="fEmail">Email</label>
+      <input type="text" name="fEmail" id="fEmail"></td>
+      <td><label for="fTelefono">Teléfono</label>
+      <input type="text" name="fTelefono" id="fTelefono"></td>
+    </tr>
+    <tr>
+      <td><label for="fGenero">Género</label>
+        <select name="fGenero" id="fGenero">
+          <option value="F">Femenino</option>
+          <option value="M">Masculino</option>
+      </select></td>
+      <td><label for="fOrganizacion">Organización</label>
+      <input type="text" name="fOrganizacion" id="fOrganizacion"></td>
+    </tr>
+    <tr>
+      <td><label for="fAsunto">Asunto</label>
+      <input type="text" name="fAsunto" id="fAsunto"></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td colspan="2"><label for="fMensaje">Mensaje</label>
+      <textarea name="fMensaje" rows="5" id="fMensaje"></textarea></td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center"><input type="submit" name="bEnviar" id="bEnviar" value="Enviar"></td>
+    </tr>
+  </table>
+</form>
+<p class="copyright">Desarrollado por: <a href="mailto:jose.gutierrez2328@academicos.udg.mx">José de Jesús Gutiérrez Martínez</a></p>
+</body>
+</html>
